@@ -1,0 +1,5 @@
+= Eclipse Code Formatter for Spring
+
+This is a fork of the jdt formatter that fixes a few bugs and provides some stability against future changes.
+
+Update site: https://dl.bintray.com/philwebb/spring-eclipse-code-formatter
