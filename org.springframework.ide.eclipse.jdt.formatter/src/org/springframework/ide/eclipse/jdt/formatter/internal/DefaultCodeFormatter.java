@@ -211,15 +211,16 @@ public class DefaultCodeFormatter extends CodeFormatter {
 
 	private void findHeader() {
 		if (this.astRoot instanceof CompilationUnit) {
-			CompilationUnit compilationUnit = (CompilationUnit) this.astRoot;
-			List<TypeDeclaration> types = compilationUnit.types();
-			ASTNode node = (types.isEmpty() ? compilationUnit.getPackage() : types.get(0));
-			if (node != null) {
-				int headerEndIndex = this.tokenManager.firstIndexIn(node, -1);
+			CompilationUnit unit = (CompilationUnit) this.astRoot;
+			List<TypeDeclaration> types = unit.types();
+			ASTNode firstElement = types.isEmpty() ? unit.getPackage() : types.get(0);
+			if (firstElement != null) {
+				int headerEndIndex = this.tokenManager.firstIndexIn(firstElement, -1);
 				this.tokenManager.setHeaderEndIndex(headerEndIndex);
 			}
 		}
 	}
+
 
 	private TextEdit formatComments(String source, int kind, IRegion[] regions) {
 		MultiTextEdit result = new MultiTextEdit();
