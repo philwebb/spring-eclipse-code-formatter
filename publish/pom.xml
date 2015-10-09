@@ -34,6 +34,10 @@
 							<url>https://dl.bintray.com/philwebb/spring-eclipse-code-formatter/1.0.0</url>
 							<layout>p2</layout>
 						</repository>
+						<repository>
+							<url>https://dl.bintray.com/philwebb/spring-eclipse-code-formatter/1.0.1</url>
+							<layout>p2</layout>
+						</repository>
 					</source>
 					<destination>${project.build.directory}/repository</destination>
 					<compress>true</compress>
