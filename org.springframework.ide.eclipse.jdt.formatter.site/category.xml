@@ -3,7 +3,7 @@
    <description>
       Maven Integration for Eclipse (maven-eclipse-plugin support)
    </description>
-   <feature url="features/org.springframework.ide.eclipse.jdt.formatter.feature_1.0.1.qualifier.jar" id="org.springframework.ide.eclipse.jdt.formatter.feature" version="1.0.1.qualifier">
+   <feature url="features/org.springframework.ide.eclipse.jdt.formatter.feature_1.0.2.qualifier.jar" id="org.springframework.ide.eclipse.jdt.formatter.feature" version="1.0.2.qualifier">
       <category name="org.springframework.ide.eclipse.jdt.formatter"/>
    </feature>
    <category-def name="org.springframework.ide.eclipse.jdt.formatter" label="Spring Code Formatter"/>
