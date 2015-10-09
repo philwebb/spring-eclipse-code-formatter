@@ -611,7 +611,7 @@ public class CommentsPreparator extends ASTVisitor {
 			handleHtml(node);
 		}
 
-		if (node.isNested()) {
+		if (node.isNested() || TagElement.TAG_SEE.equals(tagName)) {
 			substituteWrapIfTouching(startIndex);
 			substituteWrapIfTouching(endIndex + 1);
 			if (IMMUTABLE_TAGS.contains(tagName) && startIndex < endIndex)
