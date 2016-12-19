@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product uid="org.springframework.ide.eclipse.jdt.formatter.site" version="1.0.2.qualifier" useFeatures="true" includeLaunchers="false">
+<product uid="org.springframework.ide.eclipse.jdt.formatter.site" version="1.1.0.qualifier" useFeatures="true" includeLaunchers="false">
 
    <configIni use="">
    </configIni>
 
    <launcherArgs>
    </launcherArgs>
-
 
    <launcher>
       <solaris/>
@@ -24,7 +23,7 @@
    </plugins>
 
    <features>
-      <feature id="org.springframework.ide.eclipse.jdt.formatter.feature" version="1.0.2.qualifier"/>
+      <feature id="org.springframework.ide.eclipse.jdt.formatter.feature" version="1.1.0.qualifier"/>
    </features>
 
 
